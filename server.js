@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGO_URI, {useCreateIndex: true, useNewUrlParser:t
 .catch(err => console.log(err.message))
 
 //middlewares
-app.use(cors(""))
+app.use(cors("https://m-twitter-clone.web.app/"))
 app.use(express.json({limit: "10mb"}))
 app.use(morgan("dev"))
 
